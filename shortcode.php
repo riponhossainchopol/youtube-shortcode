@@ -12,3 +12,6 @@ function youtube($atts) {
 	return '<object style="height: '.$height.'px; width: '.$width.'px"><param name="'.$name.'" value="'.$value.'"><param name="allowFullScreen" value="'.$allowFullScreen.'"><param name="allowScriptAccess" value="'.$allowScriptAccess.'"><embed src="'.$value.'" type="application/x-shockwave-flash" allowfullscreen="'.$allowFullScreen.'" allowScriptAccess="'.$allowScriptAccess.'" width="'.$width.'" height="'.$height.'"></object>';
 }
 add_shortcode("youtube", "youtube");
+
+// Optional attributes: width, height, name, allowFullScreen, allowScriptAccess, controls  
+[youtube value="http://www.youtube.com/watch?v=1aBSPn2P9bg"]
